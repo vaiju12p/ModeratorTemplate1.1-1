@@ -16,7 +16,7 @@ repositories {
 dependencies {
 	println "################Enter the name of project of trainee################"
 	grp = System.in.newReader().readLine()
-  	compile(group: grp, name: '1', version: '1') 
+  	compile(group: '1', name: '1', version: '1') 
     compile 'org.slf4j:slf4j-api:1.7.13'
     testCompile 'junit:junit:4.12'
 }

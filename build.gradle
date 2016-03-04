@@ -1,0 +1,22 @@
+apply plugin: 'java'
+repositories {
+    jcenter()
+}
+def grp 
+repositories {
+	maven {
+            credentials {
+                username 'admin'
+                password 'password'
+            }
+            url 'http://10.30.127.67:9091/artifactory/AssignmentreviewTemplate/'
+        }
+}
+
+dependencies {
+	println "################Enter the name of project of trainee################"
+	grp = System.in.newReader().readLine()
+  	compile(group: grp, name: '1', version: '1') 
+    compile 'org.slf4j:slf4j-api:1.7.13'
+    testCompile 'junit:junit:4.12'
+}

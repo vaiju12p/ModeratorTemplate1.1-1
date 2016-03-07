@@ -17,6 +17,7 @@ dependencies {
 	//println "################Enter the name of project of trainee################"
 	//grp = System.in.newReader().readLine()
   	compile(group: '2', name: '2', version: '2') 
+  	println "################Enter the name of project of trainee################"
     compile 'org.slf4j:slf4j-api:1.7.13'
     testCompile 'junit:junit:4.12'
 }
